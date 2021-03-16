@@ -1,0 +1,18 @@
+3e5fec1 HEAD@{0}: merge develop: Merge made by the 'recursive' strategy.
+76de60f HEAD@{1}: checkout: moving from develop to main
+f50910e HEAD@{2}: commit (merge): Merge with "styles" branch.
+b20a053 HEAD@{3}: merge images: Fast-forward
+60dc961 HEAD@{4}: checkout: moving from styles to develop
+d9e6d7d HEAD@{5}: commit: File "index.html" has been changed.
+766db97 HEAD@{6}: commit: New folder "styles" has been added.
+60dc961 HEAD@{7}: checkout: moving from develop to styles
+60dc961 HEAD@{8}: checkout: moving from images to develop
+b20a053 HEAD@{9}: commit: File index.html has been modified.
+bf31b83 HEAD@{10}: commit: New folder "images" has been added.
+60dc961 HEAD@{11}: checkout: moving from develop to images
+60dc961 HEAD@{12}: commit: New file "index.html" has been added.
+c2774c9 HEAD@{13}: checkout: moving from c2774c917f7d8e1d059483c304e600be0a442335 to develop
+c2774c9 HEAD@{14}: commit: New file "readme.txt" has been added.
+212e2c9 HEAD@{15}: checkout: moving from main to 212e2c97
+76de60f HEAD@{16}: commit: New file \'readme.txt" has been added.
+212e2c9 HEAD@{17}: clone: from https://github.com/anna-shcherbak/DevOps_online_Kharkiv_2021Q1.git
