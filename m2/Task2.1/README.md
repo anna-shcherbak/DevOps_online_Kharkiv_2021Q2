@@ -14,8 +14,8 @@ The most popular hypervisors of **type 1** are:
 The most popular hypervisors of **type 2** are:
 
 * VMware Workstation
-* *Oracle Virtual Box
-* *OpenVZ
+* Oracle Virtual Box
+* OpenVZ
 
 ### 2. The main differences of the most popular hypervisors
 The following table shows main differences of the most popular hypervisors.
