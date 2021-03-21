@@ -1,0 +1,43 @@
+INTERNAL_NET="192.168.0."
+INTERNAL_MASK="255.255.255.0"
+
+servers=[
+  {
+	:boxname => "ubuntu/trusty64",
+    :hostname => "DHCP",
+    :ip_int => INTERNAL_NET + "1",
+    :ram => 512,
+    :mac => "080027793F00",
+    :mac_int => "08002733AA10"
+  },
+  {
+	:boxname => "ubuntu/trusty64",
+    :hostname => "client",
+    :ram => 512,
+    :mac_int => "08002733AA11"
+  }
+]
+
+Vagrant.configure(2) do |config|
+    servers.each do |machine|
+        config.vm.define machine[:hostname] do |node|
+            node.vm.box = machine[:boxname]
+            node.vm.hostname = machine[:hostname]
+            if(node.vm.hostname == "DHCP")
+              node.vm.network "public_network", type: "dhcp", bridge: '', mac: machine[:mac]
+              node.vm.network "private_network", ip: machine[:ip_int], virtualbox__intnet: "intnet", mac: machine[:mac_int], netmask: INTERNAL_MASK
+              node.vm.provision "shell",
+                run: "always",
+                path: "./script_DHCP.sh"
+            else
+              node.vm.network "private_network", type: "dhcp", virtualbox__intnet: "intnet", mac: machine[:mac_int]
+            end
+			node.ssh.username = "vagrant"
+            node.ssh.password = "vagrant"
+            node.vm.provider "virtualbox" do |vb|
+                vb.customize ["modifyvm", :id, "--memory", machine[:ram]]
+                vb.name = machine[:hostname]
+            end
+        end
+    end
+end
