@@ -102,4 +102,4 @@ When it had been done, I went to AWS ECR, opened the repository, and saw the upl
 Last but not least, I created a static [website](http://annashcherbak.ga/) on Amazon S3 that is publicly available.
 I used already registered domain and I added a DNS CNAME entry to point to the Amazon S3 website endpoint. Consequently, requests to <http://annashcherbak.ga/> are routed to <http://myawsbucket.anna.s3-website.eu-central-1.amazonaws.com/>.
 
-PS. If you use <http://annashcherbak.ga/> link, site may not load the first time, please reload the page again, or use [this link](<http://myawsbucket.anna.s3-website.eu-central-1.amazonaws.com/>).
+PS. If you use <http://annashcherbak.ga/> link, site may not load on the first try, please reload the page again, or use [this link](<http://myawsbucket.anna.s3-website.eu-central-1.amazonaws.com/>).
