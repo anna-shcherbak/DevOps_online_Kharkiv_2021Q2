@@ -2,7 +2,7 @@
 
 ## TASK 4.1
 
-I build the first topology and assigned IP addresses.
+I built the first topology and assigned IP addresses.
 
 ![Screenshot1](./Images/Screenshot1.png)
 
