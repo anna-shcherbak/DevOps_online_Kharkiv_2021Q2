@@ -6,7 +6,7 @@ I build the first topology and assigned IP addresses.
 
 ![Screenshot1](./Images/Screenshot1.png)
 
-Then I used simulation mode to see packets flowing from one node to another ([video of traffic moving through the network](./Video/Topology1.mp4)). 
+Then I used simulation mode to see packets flowing from one node to another ([video of traffic moving through the network](./Video/Topology1.mp4), [.pkt file](./Topologies/topology1.pkt)). 
 
 First, the ARP request was sent with broadcast MAC (FFFF.FFFF.FFFF.FFFF), the reason way it happened was absence of MAC address of destination PC in ARP table. It had to first learn this by broadcasting a frame to all local devices, asking for the one with the specific IP address to reply with its MAC address. Only after this process, when computer had learned that the destination IP address had been mapped to the specific MAC address, the ICMP packet could be transmitted. The first ICMP packet is shown in the figure below.
 
@@ -18,11 +18,11 @@ From this screenshot not only can we see the destination and source IP addresses
 
 Then, I deleted IP addresses of PCs and checked the state of the network. Without an assigned IP address packets could not be transmitted. If a computer is unable to configure a valid IP address, it can't connect to a network.
 
-The next step was to build second topology with two hubs ( [video](./Video/Topology2.mp4) of traffic moving through this network). This network worked perfectly on condition that the necessary IP addresses were configured correctly. 
+The next step was to build second topology with two hubs ( [video](./Video/Topology2.mp4) of traffic moving through this network, [.pkt file](./Topologies/topology2.pkt)). This network worked perfectly on condition that the necessary IP addresses were configured correctly. 
 
 ![Screenshot4](./Images/Screenshot4.png)
 
-The third topology with one switch was configured ( [video](./Video/Topology3.mp4) of traffic moving through this network).
+The third topology with one switch was configured ( [video](./Video/Topology3.mp4) of traffic moving through this network, [.pkt file](./Topologies/topology3.pkt)).
 
 ![Screenshot5](./Images/Screenshot5.png)
 
@@ -30,11 +30,11 @@ As soon as, IP addresses from all hosts were deleted, the network couldn’t fun
 
 There is a big difference between a hub and switch. When a hub receives a packet of data (an Ethernet frame) at one of its ports from a network device, it repeats the packet to all its ports to all the other network devices. Whereas switch can decide which computer is the message intended for and send the message directly to the right computer.
 
-The fourth topology with two switches was configured ( [video](./Video/Topology4.mp4) of traffic moving through this network).
+The fourth topology with two switches was configured ( [video](./Video/Topology4.mp4) of traffic moving through this network, [.pkt file](./Topologies/topology4.pkt)).
 
 ![Screenshot6](./Images/Screenshot6.png)
 
-Once I had done this, I built the fifth topology with router, two switches and two subnetworks ([video](./Video/Topology5.mp4) of traffic moving through this network).
+Once I had done this, I built the fifth topology with router, two switches and two subnetworks ([video](./Video/Topology5.mp4) of traffic moving through this network, [.pkt file](./Topologies/topology5.pkt)).
 
 ![Screenshot7](./Images/Screenshot7.png)
 
