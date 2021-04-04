@@ -14,7 +14,7 @@ After having done this, I configured an RIP routing protocol on the Router0. I a
 
 ![Screenshot3.png](./Images/Screenshot3.png)
 
-As far as I’m concerned, it was no use configuring RIP protocol in this particular network, because there was no other router with which Router0 could communicate. The example of appropriate use of RIP protocol between two router you can look in the [exercise 2 of task 4.2](https://github.com/anna-shcherbak/DevOps_online_Kharkiv_2021Q2/tree/main/m4/Task4.2#exercise-2). 
+As far as I’m concerned, it was no use configuring RIP protocol in this particular network, because there was no other router with which Router0 could communicate. The example of appropriate use of RIP protocol between two router you can look in the [exercise 1 of task 4.2](https://github.com/anna-shcherbak/DevOps_online_Kharkiv_2021Q2/tree/main/m4/Task4.2#exercise-1). 
 
 Consequently, the LAN was up and running properly. I chose the PC3 in order to ping the Server1 that was in another network.
 You also can watch a [video](./Video_task4.3.mp4), where I used Simulation mode to visually present the results.
