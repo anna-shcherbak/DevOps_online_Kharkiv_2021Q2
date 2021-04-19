@@ -128,19 +128,19 @@ After this configurations, client could connect to ssh server only from 192.168.
 
 ![Screenshot19](./Images/Screenshot19.png)
 
-To generate public and private keys I executed the following command:
+3) To generate public and private keys I executed the following command:
 
 ![Screenshot16](./Images/Screenshot16.png)
 
 The algorithm is selected using the -t option, key size using the -b option and the file in which to store the key was specified on the command line using the -f option.
 
-3) I implemented port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT. Host machine had 192.168.0.157 IP address, VM had 192.168.240.130 and ssh configured on 64344 port.
+4) I implemented port forwarding for the SSH client from the host machine to the guest Linux virtual machine behind NAT. Host machine had 192.168.0.157 IP address, VM had 192.168.240.130 and ssh configured on 64344 port.
 
 ![Screenshot20](./Images/Screenshot20.png)
 
 The -L switch specifies local forwarding. Local port forwarding allowed me to forward traffic on a port of my local computer to the SSH server, which is forwarded to a destination server. Any traffic arriving on port 41654 is sent to the SSH server. Then, the received traffic will be sent to 45419 port of 192.168.240.130, which is the server itself.
 
-4) I intercepted traffic with Wireshark tool while authorizing the remote client on the server using ssh, telnet, rlogin. First, I analyzed traffic during authentication with telnet and rlogin network protocols, as expected, all information was in a plain text including user login and password. 
+5) I intercepted traffic with Wireshark tool while authorizing the remote client on the server using ssh, telnet, rlogin. First, I analyzed traffic during authentication with telnet and rlogin network protocols, as expected, all information was in a plain text including user login and password. 
 
     In the following figure you can see that I restored data from captured traffic utilizing the Follow TCP Stream feature of Wireshark when telnet protocol was used.
 
