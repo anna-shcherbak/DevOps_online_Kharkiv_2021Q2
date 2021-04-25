@@ -11,7 +11,7 @@ Addressing table is shown below.
 |     VM1       |     Ens33 (NAT)               |     192.168.240.132    |     255.255.255.0    |                        |
 |               |     Ens38 (LAN)               |     10.10.10.1         |     255.255.255.0    |                        |
 |     VM2       |     Ens33               |     10.10.10.2         |     255.255.255.0    |     10.10.10.1         |
-|     VM3       |     Ens33               |     10.10.10.3         |     255.255.255.0    |     10.10.10.1         |
+|     VM3       |     Ens38               |     10.10.10.3         |     255.255.255.0    |     10.10.10.1         |
 
 Firstly, I configured two interfaces (LAN and NAT) on the VM1. The interface ‘ens33’ had got the dynamic IP address 192.168.240.132/24 whereas the interface ‘ens38’ was without IP address so I assigned the static IP address 10.10.10.1/24 with mask for this interface. For this purpose, I made corresponding changes in the */etc/network/interfaces* file.  
 
